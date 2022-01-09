@@ -8,7 +8,6 @@ resource "random_id" "storage_account_name" {
 }
 
 resource "azurerm_storage_account" "main" {
-  #name                     = "tfstate" # Error: This name is taken. Create a unique name or use random id
   name                     = "tfstate${random_id.storage_account_name.hex}"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
