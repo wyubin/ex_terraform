@@ -8,7 +8,7 @@ terraform {
   # remote Backend
   backend "azurerm" {
     resource_group_name  = "ex-terraform-poc"
-    storage_account_name = "tfstate5d3bb65ad3a99fab"
+    storage_account_name = "tfstateefe013ab3c380421"
     container_name       = "tfstate"
     key                  = "_poc/container_registry/terraform.tfstate"
   }

@@ -1,0 +1,1 @@
+../container_registry_module/provider.tf

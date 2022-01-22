@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "rg" {
-  name     = "ex-terraform-poc"
-  location = "southeastasia" # Or use japaneast
-}
-
 resource "random_id" "storage_account_name" {
   byte_length = 8
 }
